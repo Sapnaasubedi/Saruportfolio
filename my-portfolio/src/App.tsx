@@ -1,5 +1,5 @@
 import { Header } from "antd/es/layout/layout";
-import { Flex,Avatar,Typography  } from "antd";
+import { Flex,Typography  } from "antd";
 
 const { Text, Link } = Typography;
 function App() {
