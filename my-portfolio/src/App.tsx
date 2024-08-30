@@ -1,33 +1,8 @@
-import { Header } from "antd/es/layout/layout";
-import { Flex,Typography  } from "antd";
+import NavBar from "./components/NavBar";
 
-const { Text, Link } = Typography;
 function App() {
   return (
-    <Header >
-    <Flex align="center" gap="middle">
-      <Link href="/">
-        SARu
-      </Link>
-
-
-    </Flex>
-
-    <Flex gap="large">
-      <Flex align="center" gap="small">
-        <Text>Home </Text>
-
-        
-      </Flex>
-
-      <Flex align="center" gap="middle">
-      
-        <Text>About</Text>
-
-      
-      </Flex>
-    </Flex>
-  </Header>
+    <><NavBar/></>
   );
 }
 
