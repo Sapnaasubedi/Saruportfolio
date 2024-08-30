@@ -2,7 +2,9 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <><NavBar/></>
+    <div style={{ background: "black" }}>
+      <NavBar />
+    </div>
   );
 }
 
