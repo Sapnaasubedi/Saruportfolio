@@ -1,4 +1,4 @@
-import { Space } from "antd";
+import { Button, Space } from "antd";
 import "./hero.css";
 import { TiSocialFacebook } from "react-icons/ti";
 import { BiLogoTwitter } from "react-icons/bi";
@@ -25,6 +25,15 @@ const Hero = () => {
           <li style={{ color: "white", listStyle: "none", fontSize: "24px" }}>
             <TiSocialFacebook />
           </li>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+          {" "}
+          <Button size="large" style={{ borderRadius: "30px" }}>
+            View Work
+          </Button>{" "}
+          <Button style={{ borderRadius: "30px" }} size="large">
+            Hire Me
+          </Button>
         </div>
       </Space>
     </div>
