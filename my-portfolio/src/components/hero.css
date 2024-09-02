@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #c8dc71;
+    --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #16181b;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  /* Custom */
+  
+  h1 {
+    color: #dbd56e;
+    background: -webkit-linear-gradient(25deg, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: type 4s steps(90) 1.5s infinite, cursor 1s step-end infinite;
+    position: relative;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
