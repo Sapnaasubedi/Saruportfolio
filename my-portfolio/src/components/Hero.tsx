@@ -1,13 +1,15 @@
-import React from 'react'
+
+import { Space } from 'antd';
 import './hero.css'
+import { TiSocialFacebook } from "react-icons/ti";
 const Hero = () => {
   return (
     <div className="container">
-    <div>
-      <h4 style={{ color: "white" , textAlign: "center", margin: "20px"}}>WELCOME TO MY WEBSITE</h4>
+    <Space direction='vertical' size="large">
+      <h4 style={{ color: "white" , textAlign: "center"}}>WELCOME TO MY WEBSITE</h4>
       <h1 className="type">I'am a Backend Developer</h1>
-    </div>
-    <div></div>
+      <ul><li style={{color: "white" , listStyle: "none" , fontSize: "24px"}}><TiSocialFacebook /></li></ul>
+    </Space>
   </div>
   )
 }
