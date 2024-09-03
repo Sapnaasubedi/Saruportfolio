@@ -3,8 +3,7 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <div>
-      {/* <NavBar /> */}
-      <Hero/>
+      <Hero />
     </div>
   );
 }

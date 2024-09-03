@@ -24,7 +24,9 @@ const NavBar = () => {
 
   return (
     <Flex
-      className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}
+      className={`navbar ${
+        scrolled ? "navbar-scrolled" : "navbar-transparent"
+      }`}
       style={{ justifyContent: "space-around" }}
     >
       <Flex>
