@@ -1,11 +1,33 @@
+import React, { useEffect, useState } from "react";
 import { Flex, Typography } from "antd";
+import "./navbar.css"; // Import the CSS file for the scroll effect
+
 const { Text, Link } = Typography;
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Flex style={{ justifyContent: "space-around" }}>
+    <Flex
+      className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-transparent"}`}
+      style={{ justifyContent: "space-around" }}
+    >
       <Flex>
-        {" "}
         <Text strong style={{ fontSize: "30px", color: "white" }}>
           Sa Ru
         </Text>
@@ -41,6 +63,30 @@ const NavBar = () => {
               href="/about"
             >
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontSize: "16px",
+              }}
+              href="/service"
+            >
+              Service
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontSize: "16px",
+              }}
+              href="/resume"
+            >
+              Resume
             </Link>
           </li>
           <li>

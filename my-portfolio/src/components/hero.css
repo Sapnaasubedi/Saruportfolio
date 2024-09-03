@@ -12,14 +12,19 @@
   body {
     font-family: "Space Grotesk", sans-serif;
     background-color: #16181b;
+    margin: 10px;
   }
   
   .container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    justify-content: center;
+    background-image: url('../assets/home-bg.jpg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
   }
  
   /* Custom */

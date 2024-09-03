@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div style={{ background: "black" }}>
+    <div>
       <NavBar />
       <Hero/>
     </div>

@@ -27,10 +27,9 @@ const Hero = () => {
           </li>
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
-          {" "}
           <Button size="large" style={{ borderRadius: "30px" }}>
             View Work
-          </Button>{" "}
+          </Button>
           <Button style={{ borderRadius: "30px" }} size="large">
             Hire Me
           </Button>
