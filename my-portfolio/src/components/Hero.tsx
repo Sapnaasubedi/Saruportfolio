@@ -7,9 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="container">
-      
       <Space direction="vertical" size="large">
-       
         <h4 style={{ color: "white", textAlign: "center" }}>
           WELCOME TO MY WEBSITE
         </h4>
