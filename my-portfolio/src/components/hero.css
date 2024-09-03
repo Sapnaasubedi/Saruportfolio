@@ -16,17 +16,23 @@
   }
   
   .container {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
+   
+    display:block;
     justify-content: center;
     align-items: center;
     background-image: url('../assets/home-bg.jpg');
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
- 
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
   /* Custom */
   
   h1 {
