@@ -5,9 +5,9 @@ import AboutImage from "../assets/about.jpg";
 const { Text } = Typography;
 const About = () => {
   return (
-    <Flex justify="center">
-      <Space direction="vertical">
-        <Text style={{ color: "white", fontSize: "28px", fontWeight: "bold" }}>
+    <Flex justify="center" style={{ margin: "50px" }}>
+      <Space direction="vertical" size="large" align="center">
+        <Text style={{ color: "white", fontSize: "30px", fontWeight: "bold" ,alignSelf: "center"}}>
           About Me
         </Text>
         <Space direction="horizontal" size={50}>
@@ -17,9 +17,9 @@ const About = () => {
 
           <Space direction="vertical" style={{maxWidth: "600px"}}>
             <Text style={{ color: "white", fontSize: "30px", fontWeight: "bold" }}>I am  <span style={{ color: "#dbd56e" }}>Saraswati Niroula</span></Text>
-            <Text style={{ color: "white", fontSize: "18px" }}>Backend Developer</Text>
+            <Text style={{ color: "#c3c3c3", fontSize: "18px", letterSpacing: "5px" }}>BACKEND DEVELOPER</Text>
 
-            <Text style={{ color: "white", fontSize: "18px" }}>
+            <Text style={{ color: "#c5c5c5", fontSize: "16px" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation laboris nisi ut
