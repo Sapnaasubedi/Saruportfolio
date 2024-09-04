@@ -67,8 +67,7 @@
   
   .about {
    
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
+   border: 10px solid white;
+   border-radius: 10px;
+   justify-content: space-around;
   }
