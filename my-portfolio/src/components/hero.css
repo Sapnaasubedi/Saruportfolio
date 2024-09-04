@@ -38,7 +38,7 @@
       color: #dbd56e;
       background: -webkit-linear-gradient(25deg, #eee, #333);
       -webkit-background-clip: text;
-      background-clip: text; /* Add the standard property */
+      background-clip: text; 
       -webkit-text-fill-color: transparent;
       font-size: 3rem;
       font-weight: 500;
@@ -65,3 +65,10 @@
     }
   }
   
+  .about {
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
