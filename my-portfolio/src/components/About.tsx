@@ -1,4 +1,4 @@
-import { Space, Typography, Image, Flex, Button } from "antd";
+import { Space, Typography, Image, Flex } from "antd";
 import "./hero.css";
 import AboutImage from "../assets/about.jpg";
 
@@ -10,16 +10,16 @@ const About = () => {
         <Text style={{ color: "white", fontSize: "28px", fontWeight: "bold" }}>
           About Me
         </Text>
-        <Space direction="horizontal">
+        <Space direction="horizontal" size={50}>
           <div className="about">
-            <Image width={300} src={AboutImage} />
+            <Image width={400} src={AboutImage} />
           </div>
 
-          <Space>
-            <Text style={{ color: "white", fontSize: "18px" }}>I am Saraswati Niroula</Text>
+          <Space direction="vertical" style={{maxWidth: "600px"}}>
+            <Text style={{ color: "white", fontSize: "30px", fontWeight: "bold" }}>I am  <span style={{ color: "#dbd56e" }}>Saraswati Niroula</span></Text>
             <Text style={{ color: "white", fontSize: "18px" }}>Backend Developer</Text>
 
-            <Text>
+            <Text style={{ color: "white", fontSize: "18px" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation laboris nisi ut
