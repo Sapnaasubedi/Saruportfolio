@@ -1,4 +1,4 @@
-import { Space, Typography, Image, Flex } from "antd";
+import { Space, Typography, Image, Flex, Button } from "antd";
 import "./hero.css";
 import AboutImage from "../assets/about.jpg";
 
@@ -50,6 +50,7 @@ const About = () => {
               nostrud exercitation laboris nisi ut aliquip ex ea commodo
               consequat.
             </Text>
+            <Button  size="large" style={{background: "transparent", color: "white"}}>DOWNLOAD MY CV</Button>
           </Space>
         </Space>
       </Space>
