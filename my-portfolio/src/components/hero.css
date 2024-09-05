@@ -71,3 +71,10 @@
    border-radius: 10px;
    justify-content: space-around;
   }
+  .gradient-divider {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
+    height: 1px; 
+    width: 100%; 
+    max-width: 300px; 
+    margin: 10px auto; 
+  }

@@ -1,4 +1,4 @@
-import { Space, Typography, Image, Flex } from "antd";
+import { Space, Typography, Image, Flex, Divider } from "antd";
 import "./hero.css";
 import AboutImage from "../assets/about.jpg";
 
@@ -9,10 +9,12 @@ const About = () => {
       <Space direction="vertical" size="large" align="center">
         <Text style={{ color: "white", fontSize: "30px", fontWeight: "bold" ,alignSelf: "center"}}>
           About Me
-        </Text>
+          <div className="gradient-divider"></div>
+          </Text>
+        
         <Space direction="horizontal" size={50}>
           <div className="about">
-            <Image width={400} src={AboutImage} />
+            <Image width={550} src={AboutImage} />
           </div>
 
           <Space direction="vertical" style={{maxWidth: "600px"}}>
