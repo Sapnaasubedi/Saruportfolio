@@ -1,5 +1,5 @@
 import React from "react";
-import { Space, Typography, Image, Flex, Button } from "antd";
+import { Space, Typography,  Flex } from "antd";
 import "./hero.css";
 
 const { Text } = Typography;
