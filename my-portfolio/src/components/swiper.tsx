@@ -3,7 +3,7 @@
 
 import "swiper/css";
 import "swiper/css/navigation";
-import ".hero.css";
+import "./hero.css";
 import { Col, Row } from "antd";
 import type { ReactNode } from "react";
 import React from "react";
