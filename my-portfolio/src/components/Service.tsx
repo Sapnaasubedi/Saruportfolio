@@ -5,6 +5,7 @@ import "./hero.css";
 const { Text } = Typography;
 
 const Service = () => {
+ 
   return (
     <Flex justify="center" style={{ margin: "50px" }}>
       <Space direction="vertical" size="large" align="center">
@@ -19,6 +20,7 @@ const Service = () => {
           My Services <div className="gradient-divider"></div>
         </Text>
       </Space>
+      
     </Flex>
   );
 };
