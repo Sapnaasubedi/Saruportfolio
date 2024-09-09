@@ -1,7 +1,9 @@
 import React from "react";
-import { Space, Typography,  Flex, Slider } from "antd";
+import { Space, Typography,  Flex } from "antd";
 import "./hero.css";
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const { Text } = Typography;
 
 const Service = () => {
