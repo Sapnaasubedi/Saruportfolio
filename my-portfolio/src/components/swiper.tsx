@@ -3,7 +3,7 @@
 
 import "swiper/css";
 import "swiper/css/navigation";
-import ".hero.css";
+import "./hero.css";
 import { Col, Row } from "antd";
 import type { ReactNode } from "react";
 import React from "react";
@@ -23,7 +23,6 @@ export const SwiperComponent: React.FC<SwiperComponentProps> = ({
 }) => {
   return unnest(children).length > 3 ? (
     <Swiper
-     
       modules={[Navigation]}
       navigation
       slidesPerView={3}
@@ -31,9 +30,7 @@ export const SwiperComponent: React.FC<SwiperComponentProps> = ({
       {...props}
     >
       {unnest(children).map((slide, index) => (
-        <SwiperSlide key={index}>
-          {slide}
-        </SwiperSlide>
+        <SwiperSlide key={index}>{slide}</SwiperSlide>
       ))}
     </Swiper>
   ) : (

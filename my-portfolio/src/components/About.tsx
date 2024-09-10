@@ -50,7 +50,12 @@ const About = () => {
               nostrud exercitation laboris nisi ut aliquip ex ea commodo
               consequat.
             </Text>
-            <Button  size="large" style={{background: "transparent", color: "white"}}>DOWNLOAD MY CV</Button>
+            <Button
+              size="large"
+              style={{ background: "transparent", color: "white" }}
+            >
+              DOWNLOAD MY CV
+            </Button>
           </Space>
         </Space>
       </Space>
