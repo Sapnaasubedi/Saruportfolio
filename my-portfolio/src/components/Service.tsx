@@ -19,7 +19,6 @@ const Service = () => {
         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjGl4fuo1tZOynCGQ0iR2z3Gl8nCX_MDx95xxUrnV69GHl73SacIdD_dk4szzAGBDYA1QEm_BENDY4BHfR_brzCjyyUcrnnAVSr3vXRda880kAxV2uFPu_n_mxsBqVV-UA4XwvS3yU3QCMnNCaH4geII40oDOZgG4ZiEhDq_uccNlfbDCSWGew6aet/s16000/pexels-photo-1656663.jpeg",
       bio: "This is a short bio about rose. This is a short bio about rose. This is a short bio about rose.",
     },
-    // ... Add other testimonials here
   ];
   return (
     <Flex justify="center" style={{ margin: "50px" }}>
@@ -34,14 +33,14 @@ const Service = () => {
         >
           My Services <div className="gradient-divider"></div>
         </Text>
-      </Space>
-      <SwiperComponent>
+        <SwiperComponent>
         {testimonials.map((testimonial) => (
           <Flex>
             <Text>{testimonial.bio}</Text>
           </Flex>
         ))}
       </SwiperComponent>
+      </Space>
     </Flex>
   );
 };
