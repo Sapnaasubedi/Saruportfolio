@@ -65,7 +65,7 @@ const Service = () => {
          >
           <Space direction="vertical" align="center">
             <Image src={testimonial.image}/>
-            <Text>{ testimonial.name }</Text>
+            <Text strong>{ testimonial.name }</Text>
           <Text>{ testimonial.bio }</Text></Space>
           
          </Card>
