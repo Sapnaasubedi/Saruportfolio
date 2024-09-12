@@ -21,7 +21,7 @@ export const SwiperComponent: React.FC<SwiperComponentProps> = ({
   className,
   ...props
 }) => {
-  return unnest(children).length > 3 ? (
+  return unnest(children).length > 7 ? (
     <Swiper
       modules={[Navigation]}
       navigation
