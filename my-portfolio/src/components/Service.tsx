@@ -1,7 +1,8 @@
 import React from "react";
-import { Space, Typography, Flex } from "antd";
+import { Space, Typography, Flex, Card, Image } from "antd";
 import "./hero.css";
 import { SwiperComponent } from "./swiper";
+import Meta from "antd/es/card/Meta";
 
 const { Text } = Typography;
 
@@ -35,9 +36,16 @@ const Service = () => {
         </Text>
         <SwiperComponent>
         {testimonials.map((testimonial) => (
-          <Flex>
-            <Text>{testimonial.bio}</Text>
-          </Flex>
+           <Card
+           hoverable
+       
+         >
+          <Space direction="vertical" align="center">
+            <Image src={testimonial.image}/>
+            <Text>{ testimonial.name }</Text>
+          <Text>{ testimonial.bio }</Text></Space>
+          
+         </Card>
         ))}
       </SwiperComponent>
       </Space>
