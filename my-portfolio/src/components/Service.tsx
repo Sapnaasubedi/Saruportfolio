@@ -58,19 +58,16 @@ const Service = () => {
           My Services <div className="gradient-divider"></div>
         </Text>
         <SwiperComponent>
-        {testimonials.map((testimonial) => (
-           <Card
-           hoverable
-       
-         >
-          <Space direction="vertical" align="center">
-            <Image src={testimonial.image}/>
-            <Text strong>{ testimonial.name }</Text>
-          <Text>{ testimonial.bio }</Text></Space>
-          
-         </Card>
-        ))}
-      </SwiperComponent>
+          {testimonials.map((testimonial) => (
+            <Card hoverable>
+              <Space direction="vertical" align="center">
+                <Image src={testimonial.image} />
+                <Text strong>{testimonial.name}</Text>
+                <Text>{testimonial.bio}</Text>
+              </Space>
+            </Card>
+          ))}
+        </SwiperComponent>
       </Space>
     </Flex>
   );
