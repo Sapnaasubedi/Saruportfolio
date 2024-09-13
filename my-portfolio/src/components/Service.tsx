@@ -57,7 +57,7 @@ const Service = () => {
         >
           My Services <div className="gradient-divider"></div>
         </Text>
-        <SwiperComponent>
+        <Space align="center" style={{ maxWidth: "1220px" }}><SwiperComponent>
           {testimonials.map((testimonial) => (
             <Card hoverable>
               <Space direction="vertical" align="center">
@@ -66,8 +66,8 @@ const Service = () => {
                 <Text>{testimonial.bio}</Text>
               </Space>
             </Card>
-          ))}
-        </SwiperComponent>
+          ))}</SwiperComponent></Space>
+        
       </Space>
     </Flex>
   );
