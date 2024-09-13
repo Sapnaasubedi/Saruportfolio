@@ -57,17 +57,28 @@ const Service = () => {
         >
           My Services <div className="gradient-divider"></div>
         </Text>
-        <Space align="center" size="large" style={{ maxWidth: "1220px" }} ><SwiperComponent>
-          {testimonials.map((testimonial) => (
-            <Card hoverable style={{background:"black" , border:"none"}}>
-              <Space direction="vertical" align="center" size="large" style={{padding:"25px"}}>
-                <Image height={50} src={testimonial.image} />
-                <Text style={{ color: "white" , fontSize:"20px"}} strong>{testimonial.name}</Text>
-                <Text style={{ color: "white" , textAlign:"center"}}>{testimonial.bio}</Text>
-              </Space>
-            </Card>
-          ))}</SwiperComponent></Space>
-        
+        <Space align="center" size="large" style={{ maxWidth: "1220px" }}>
+          <SwiperComponent>
+            {testimonials.map((testimonial) => (
+              <Card hoverable style={{ background: "black", border: "none" }}>
+                <Space
+                  direction="vertical"
+                  align="center"
+                  size="large"
+                  style={{ padding: "25px" }}
+                >
+                  <Image height={50} src={testimonial.image} />
+                  <Text style={{ color: "white", fontSize: "20px" }} strong>
+                    {testimonial.name}
+                  </Text>
+                  <Text style={{ color: "white", textAlign: "center" }}>
+                    {testimonial.bio}
+                  </Text>
+                </Space>
+              </Card>
+            ))}
+          </SwiperComponent>
+        </Space>
       </Space>
     </Flex>
   );
